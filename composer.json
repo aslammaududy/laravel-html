@@ -1,0 +1,59 @@
+{
+  "name": "aslammaududy/laravel-html",
+  "description": "html builder for laravel",
+  "keywords": [
+    "aslammaududy",
+    "laravel-html"
+  ],
+  "homepage": "https://github.com/aslammaududy/laravel-html",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Aslam Maududy Atturraby",
+      "email": "aslam14397@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/http": "@stable",
+    "illuminate/routing": "@stable",
+    "illuminate/session": "@stable",
+    "illuminate/support": "@stable",
+    "illuminate/view": "@stable"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "illuminate/database": "@stable",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aslammaududy\\LaravelHtml\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aslammaududy\\LaravelHtml\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Aslammaududy\\LaravelHtml\\LaravelHtmlServiceProvider"
+      ],
+      "aliases": {
+          "Form": "Aslammaududy\\LaravelHtml\\FormFacade",
+          "Html": "Aslammaududy\\LaravelHtml\\HtmlFacade"
+      }
+    }
+  }
+}
