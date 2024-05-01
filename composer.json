@@ -55,5 +55,6 @@
           "Html": "Aslammaududy\\LaravelHtml\\HtmlFacade"
       }
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
