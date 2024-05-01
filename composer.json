@@ -48,7 +48,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Aslammaududy\\LaravelHtml\\LaravelHtmlServiceProvider"
+        "Aslammaududy\\LaravelHtml\\HtmlServiceProvider"
       ],
       "aliases": {
           "Form": "Aslammaududy\\LaravelHtml\\FormFacade",
